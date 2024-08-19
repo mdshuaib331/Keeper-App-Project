@@ -36,6 +36,7 @@ footer {
 footer p {
   color: #ccc;
 }
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -45,10 +46,12 @@ footer p {
   margin: 16px;
   float: left;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
+
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
@@ -77,6 +80,7 @@ form.create-note {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+
 form.create-note input,
 form.create-note textarea {
   width: 100%;
@@ -87,6 +91,7 @@ form.create-note textarea {
   font-family: inherit;
   resize: none;
 }
+
 form.create-note button {
   position: absolute;
   right: 18px;
@@ -101,3 +106,64 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
+/* -----media-query---- */
+@media (max-width: 1024px) {
+  header {
+    padding: 16px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .note {
+    width: 220px;
+    margin: 12px;
+  }
+
+  form.create-note {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  form.create-note button {
+    right: 10px;
+    bottom: -10px;
+  }
+}
+
+/* Styles for mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    padding: 10px;
+    margin: 0;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  .note {
+    width: 100%;
+    margin: 8px 0;
+    float: none;
+  }
+
+  form.create-note {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  form.create-note button {
+    right: 5px;
+    bottom: -5px;
+  }
+}
+
